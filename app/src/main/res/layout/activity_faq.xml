@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.oliviamontoya.letstradezines.FAQ">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.oliviamontoya.letstradezines.FAQ">
+
+            <TextView
+                android:id="@+id/faq1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="How do I change my profile picture?" />
+
+            <TextView
+                android:id="@+id/faq1a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:text="Go to your profile by opening up the navigation bar (tap on the three horizontal lines at the top right of the welcome screen) and choosing 'profile.' Tap the current profile picture. You will be taken to a page where you can upload a new image from your device. The new image will overwrite the old image." />
+
+            <TextView
+                android:id="@+id/faq2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="What is shown on the home screen?" />
+
+            <TextView
+                android:id="@+id/faq2a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:text="There are three boxes on the home screen below your username. The first shows any open trades you are currently in (see the question on the staes of a trade), the second shows up to the last 5 messages you've received (tap a message to go to a page where you can reply to the message), and the last shows up to the last 5 updates to your follow feed (see the question on the follow feed). Tap the items on the follow feed box to go to the profiles where the items are featured." />
+
+            <TextView
+                android:id="@+id/faq3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="What is the follow feed?" />
+
+            <TextView
+                android:id="@+id/faq3a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:text="The follow feed shows the zines that users you followed (tap the follow button on a user's profile) have posted, starting with the most recently posted. Tap a zine in the feed to go to the profile of the user who posted the zine." />
+
+            <TextView
+                android:id="@+id/faq4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="How does my profile appear to other users?" />
+
+            <TextView
+                android:id="@+id/faq4a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:text="Other users will be able to see your profile picture, username, birth year, gender, location, trade rating, number of completed trades, profile description/bio, zine genres liked, zine genres made, and zines you've added, but will be unable to edit them. You can leave any public profile attribute blank aside from your username and birth year when you edit your profile or simply say that you are not comfortable saying something for a certain attribute, but you cannot hide your number of completed trades or trade rating." />
+
+            <TextView
+                android:id="@+id/faq5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="How should I arrange a trade?" />
+
+            <TextView
+                android:id="@+id/faq5a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:text="There are many ways you could go about arranging a trade with another user. For one, you could send the user a message asking if they are interested in trading, or you could suggest a trade with them through their profile (there is a button that says 'suggest a trade'). If the other user is interested you can either arrange to trade informally/without officially setting up a trade (do this at your own risk, as it will not add to your completed trades and you will be unable to rate the other user) or officially suggest and agree to a trade through the trading system (see 'trades' on the navigation menu on the home screen).\n\nOnce you have agreed in some way to a trade, it is up to you to exchange contact information. It is recommended that you share email addresses or other online contact info through Let's Trade Zines messages and share more sensitive information through more secured means, but you could also exchange addresses through Let's Trade Zines messages. The database in which messages are stored is secured by Google Firebase and messages are encrypted, but Let's Trade Zines cannot absolutely guarantee the security of your messages. (Also see the question about deleting messages.)" />
+
+            <TextView
+                android:id="@+id/faq6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="What are the different stages of a trade?" />
+
+            <TextView
+                android:id="@+id/faq6a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:text="There are three stages of a trade on Let's Trade Zines, plus three trade attributes. This sounds complicated, but it is actually fairly simple ouside of a few rare cases. The first stage of a trade is the suggested trade. A suggested trade is not open yet, and will be deleted if rejected by the person who receives it. The sender of a suggested trade can also delete it with one click before it is accepted by the other user. Your trades page shows both trades suggested by you and trades suggested to you and any available options for these.\n\nOnce the recipient of a trade request accepts it (the first trade attribute is whether it is accepted), the trade enters the second stage: the open trade. Once a trade is open, you should share contact information with the other user and trade zines either by email or snail mail. Once you have received the zine(s) from the other user, you can mark the trade completed (the second attribute.) You may also cancel a trade, but it will only be deleted if both users cancel (the third attribute) it.\n\nIf a user cancels a trade after marking it completed the trade will remain open for 30 days and then move to completed trades (or sooner if the other user marks it completed.) (You don't really want to cancel a trade after marking it completed unless you've agreed with the other user to mutually cancel the trade, as you will probably get a bad rating if you haven't already sent out your zines to the other user.) This situation (30 days until completed) can also happen if one person marks a trade completed and the other cancels. If your trade partner marks your zines received (after which they cannot cancel) and you never receive anything, you can choose cancel to force the trade to close after 30 days, after which you can rate appropriately. Once you cancel a trade, you cannot mark it completed.\n\nThe third stage of a trade is the completed trade. A trade is considered completed if both users involved mark it completed or in the cases described previously, otherwise an open trade will stay open indefinitely. Once a trade is completed, users can rate the other user (See the question on the trade rating system.)" />
+
+
+            <TextView
+                android:id="@+id/faq7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="How do trade ratings work?" />
+
+            <TextView
+                android:id="@+id/faq7a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:text="After a trade is completed (see above question) each user can rate their trade partner on their participation in the trade from 0.0 to 5.0, 5.0 being the best. A field and button you can use to rate the trade will appear in the completed trades section of the trades page. Trade ratings shown on profiles are an average of all the ratings they've received." />
+
+            <TextView
+                android:id="@+id/faq8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Can I delete a message?" />
+
+            <TextView
+                android:id="@+id/faq8a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:text="Yes. Just tap the 'x' next to each message on the main messages page (reachable from the navigation bar). However, this will not delete the copy of the message that the other user has. You can ask the other user to delete their copy of the message if you are worried about privacy. As the other user may not agree, think carefully before you send any message to another user." />
+
+            <TextView
+                android:id="@+id/faq9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="If you have any other questions, email metaparadox11@gmail.com" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

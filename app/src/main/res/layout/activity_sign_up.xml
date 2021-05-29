@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.oliviamontoya.letstradezines.SignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.oliviamontoya.letstradezines.SignUp">
+
+            <TextView
+                android:id="@+id/signUpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:text="Fill out this form to sign up for Let's Trade Zines! You must be at least 18 to join. All information you provide will be placed on your profile except for your password and email address. Login is managed with Firebase, by Google. Usernames can only use letters and numbers. Be aware that this is a project by a single amateur developer. Use of this service is at your own risk. Send any questions to metaparadox11@gmail.com." />
+
+            <TextView
+                android:id="@+id/usernameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="USERNAME" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                tools:context="com.oliviamontoya.letstradezines.SignUp">
+
+                <EditText
+                    android:id="@+id/usernameEnter"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:maxLength="20"
+                    android:hint="Username" />
+
+                <Button
+                    android:id="@+id/checkUsernameButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="Check" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/emailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="EMAIL ADDRESS" />
+
+            <EditText
+                android:id="@+id/emailEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:maxLength="40"
+                android:hint="Email" />
+
+            <TextView
+                android:id="@+id/passwordTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="PASSWORD" />
+
+            <EditText
+                android:id="@+id/enterPassword"
+                android:inputType="textPassword"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:maxLength="30"
+                android:ellipsize="start"
+                android:hint="Password" />
+
+            <TextView
+                android:id="@+id/spinnerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="BIRTH YEAR" />
+
+            <Spinner
+                android:id="@+id/yearSpinner"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/birth_years"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="Birth Year" />
+
+            <TextView
+                android:id="@+id/genderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="GENDER" />
+
+            <EditText
+                android:id="@+id/genderEnter"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:maxLength="30"
+                android:hint="Gender" />
+
+            <TextView
+                android:id="@+id/locationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="LOCATION" />
+
+            <EditText
+                android:id="@+id/locationEnter"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:maxLength="30"
+                android:hint="Location" />
+
+            <TextView
+                android:id="@+id/profileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="PROFILE INFO" />
+
+            <EditText
+                android:id="@+id/profileInfo"
+                android:inputType="textMultiLine"
+                android:lines="1"
+                android:maxLines="10"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_margin="10dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/zineLikesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="GENRES OF ZINES YOU LIKE" />
+
+            <CheckBox
+                android:id="@+id/chkPerzines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Perzines (Personal Zines)" />
+
+            <CheckBox
+                android:id="@+id/chkFanzines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Fanzines" />
+
+            <CheckBox
+                android:id="@+id/chkArtZines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Art Zines/Photo Zines" />
+
+            <CheckBox
+                android:id="@+id/chkCompZines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Compilation Zines" />
+
+            <CheckBox
+                android:id="@+id/chkChapbooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Poetry Zines/Chapbooks" />
+
+            <CheckBox
+                android:id="@+id/chkMinicomics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Minicomics/Comic Zines" />
+
+            <CheckBox
+                android:id="@+id/chkQueerZines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Queer/LGBT+ Zines" />
+
+            <CheckBox
+                android:id="@+id/chkFeministZines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Feminist Zines" />
+
+            <CheckBox
+                android:id="@+id/chkPoliticalZines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Political Zines" />
+
+            <CheckBox
+                android:id="@+id/chkMusicZines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Music Zines" />
+
+            <CheckBox
+                android:id="@+id/chkFictionZines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Fiction Zines" />
+
+            <CheckBox
+                android:id="@+id/chkOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Other" />
+
+            <TextView
+                android:id="@+id/zinesMadeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="GENRES OF ZINES YOU MAKE" />
+
+            <CheckBox
+                android:id="@+id/chkPerzines2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Perzines (Personal Zines)" />
+
+            <CheckBox
+                android:id="@+id/chkFanzines2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Fanzines" />
+
+            <CheckBox
+                android:id="@+id/chkArtZines2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Art Zines/Photo Zines" />
+
+            <CheckBox
+                android:id="@+id/chkCompZines2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Compilation Zines" />
+
+            <CheckBox
+                android:id="@+id/chkChapbooks2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Poetry Zines/Chapbooks" />
+
+            <CheckBox
+                android:id="@+id/chkMinicomics2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Minicomics/Comic Zines" />
+
+            <CheckBox
+                android:id="@+id/chkQueerZines2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Queer/LGBT+ Zines" />
+
+            <CheckBox
+                android:id="@+id/chkFeministZines2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Feminist Zines" />
+
+            <CheckBox
+                android:id="@+id/chkPoliticalZines2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Political Zines" />
+
+            <CheckBox
+                android:id="@+id/chkMusicZines2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Music Zines" />
+
+            <CheckBox
+                android:id="@+id/chkFictionZines2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Fiction Zines" />
+
+            <CheckBox
+                android:id="@+id/chkOther2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Other" />
+
+            <Button
+                android:id="@+id/submitSignUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:onClick="signUpSubmit"
+                android:text="Submit" />
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Welcome" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

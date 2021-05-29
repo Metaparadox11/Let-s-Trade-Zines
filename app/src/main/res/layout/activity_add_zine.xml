@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oliviamontoya.letstradezines.AddZine">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.oliviamontoya.letstradezines.AddZine">
+
+                <TextView
+                    android:id="@+id/addZineText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="18sp"
+                    android:text="Use this form to create a zine listing. Your listing will be displayed on your profile. Only add a zine if you have it available to trade." />
+
+                <Button
+                    android:id="@+id/uploadZinePicButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:onClick="uploadZinePic"
+                    android:text="Upload Picture" />
+
+                <TextView
+                    android:id="@+id/nameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Zine Name" />
+
+                <EditText
+                    android:id="@+id/nameEnter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:maxLength="40"
+                    android:hint="Zine Title" />
+
+                <TextView
+                    android:id="@+id/numPagesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Number of Pages" />
+
+                <EditText
+                    android:id="@+id/numPagesEnter"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:maxLength="10"
+                    android:hint="Number of Pages" />
+
+                <TextView
+                    android:id="@+id/zineSizeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Zine Size" />
+
+                <EditText
+                    android:id="@+id/zineSizeEnter"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:maxLength="30"
+                    android:hint="Zine Size" />
+
+                <TextView
+                    android:id="@+id/detailsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Zine Details" />
+
+                <EditText
+                    android:id="@+id/detailsEnter"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_margin="10dp"
+                    android:scrollbars="vertical" />
+
+                <TextView
+                    android:id="@+id/tagsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Tags (separate with commas)" />
+
+                <EditText
+                    android:id="@+id/tagsEnter"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:maxLength="50"
+                    android:hint="Tags" />
+
+                <Button
+                    android:id="@+id/submitAddZineButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:onClick="addZineSubmit"
+                    android:text="Submit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
