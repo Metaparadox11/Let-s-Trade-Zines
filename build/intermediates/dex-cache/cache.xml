@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Olivia/AndroidStudioProjects/Let&apos;s Trade Zines/app/libs/commons-codec-1.10/commons-codec-1.10.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
+        <dex dex="/Users/Olivia/AndroidStudioProjects/Let&apos;s Trade Zines/app/build/intermediates/pre-dexed/debug/commons-codec-1.10_1a39185fce74e2b91dc6c6a928d439b8eb6b0ade.jar" />
+    </item>
+
+</items>
