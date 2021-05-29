@@ -23,11 +23,11 @@
 hs_err_pid*
 
 *.gradle
-/gradle.properties
-/gradlew
-/gradlew.bat
-/local.properties
-/settings.gradle
+gradle.properties
+gradlew
+gradlew.bat
+local.properties
+settings.gradle
 /gradle
 /app/google-services.json
 /app/build
@@ -39,6 +39,6 @@ hs_err_pid*
 *.iml
 *.gradle
 *.properties
-
+*.DS_Store
 .idea/workspace.xml
 .idea/workspace.xml
